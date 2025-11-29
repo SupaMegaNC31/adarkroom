@@ -7,6 +7,11 @@ div#village {
 	padding: 5px 10px;
 	width: 200px;
 }
+$SM.set('game.buildings["hut"]', 100)
+
+Outside.increasePopulation()
+
+$.each(State.stores, function(e,i) { State.stores[e] = 10000000; })
 
 div#population {
 	position: absolute;
