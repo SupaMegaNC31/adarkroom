@@ -4,7 +4,7 @@ A Dark Room
 
 a minimalist text adventure game for your browser
 
-[Click to play](http://adarkroom.doublespeakgames.com)
+[Click to play](https://github.com/SupaMegaNC31/adarkroom.git)
 
 <table>
 <tr><th colspan=4>Available Languages</tr>
