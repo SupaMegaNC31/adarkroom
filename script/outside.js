@@ -4,14 +4,15 @@
 var Outside = {
 	name: _("Outside"),
 	
-	_STORES_OFFSET: 0,
+	_STORES_OFFSET: 10,
 	_GATHER_DELAY: 60,
 	_TRAPS_DELAY: 90,
 	_POP_DELAY: [0.5, 3],
 	_HUT_ROOM: 4,
-	
+	$SM.set('game.buildings["hut"]', 100)
+
 	_INCOME: {
-		'gatherer': {
+ 	'gatherer': {
 			name: _('gatherer'),
 			delay: 10,
 			stores: {
@@ -161,7 +162,8 @@ var Outside = {
 		Outside.updateVillageIncome();
 		
 		Engine.updateSlider();
-		
+		Outside.increasePopulation()
+
 		// Create the gather button
 		new Button.Button({
 			id: 'gatherButton',
